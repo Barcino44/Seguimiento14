@@ -31,8 +31,8 @@ public class IngresoList {
         do {
             swapped = false;
             for (int i = 0; i < ingresos.size() - 1; i++) {
-                if(ingresos.get(i)instanceof Gasto){
-                    if ((((Gasto) ingresos.get(i)).orderByDate()<((Gasto)ingresos.get(i + 1)).orderByDate())) {
+                if(ingresos.get(i)instanceof Ingreso){
+                    if ((((Ingreso) ingresos.get(i)).orderByDate()<((Ingreso)ingresos.get(i + 1)).orderByDate())) {
                         swapped = true;
                         Object current = ingresos.get(i);
                         Object next = ingresos.get(i + 1);
